@@ -10,6 +10,7 @@ import getTheme from "../Theme";
 import { useEffect } from "react";
 import Footer from "../components/Footer/Footer";
 import NavBarItems from "../data/NavBarItems";
+import Counter from "../components/Counter/Counter";
 
 export default function HomePage() {
   let currentTheme = localStorage.getItem("theme");
@@ -40,6 +41,7 @@ export default function HomePage() {
       <Box sx={{ bgcolor: "background.default" }}>
         <Divider />
       </Box>
+      <Counter/>
       <Footer mode={mode} />
     </ThemeProvider>
   );
